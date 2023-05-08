@@ -1,0 +1,49 @@
+/**
+ * Basic typography style for copy text
+ */
+
+h2 {
+    font-size: $fs-h2;
+    font-weight: 700;
+    line-height: 0.8;
+    letter-spacing: -1.5px;
+    // font-size: clamp($fs-h2, 1.46rem + 0.3vw, 1.7rem);
+}
+
+p {
+    font-size: $para;
+    line-height: 1.4;
+}
+
+span {
+    font-size: 17px;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 17px;
+}
+
+h3 + span {
+    font-weight: 400;
+}
+
+span + p {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: -0.2px;
+}
+
+small {
+    font-size: 11px;
+}
+
+/* p {
+    font-size: $para;
+    line-height: 1.5;
+    letter-spacing: -0.4px;
+
+    @media screen and (min-width: 36rem) {
+        font-size: 1rem;
+    }
+} */

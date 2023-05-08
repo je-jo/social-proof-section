@@ -1,0 +1,73 @@
+// -----------------------------------------------------------------------------
+// This file contains very basic styles.
+// -----------------------------------------------------------------------------
+
+/// Set base colors
+$bg-color: $white;
+$text-color: $very-dark-magenta;
+$accent: $soft-pink;
+
+
+* {
+    margin: 0;
+    padding: 0;
+
+    &:focus-visible {
+        outline: 3px dotted $accent;
+        outline-offset: 3px;
+    }
+    // outline: 1px solid red;
+}
+
+body {
+    font-family: $sans-serif-stack;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    align-items: center;
+    // line-height: unset;
+    text-align: center;
+    background-color: $bg-color;
+    color: $text-color;
+}
+
+/**
+ * Basic styles for links
+ */
+a {
+    color: inherit;
+    text-underline-offset: 6px;
+
+    &:hover {
+        color: $accent;
+        // transition: $transition;
+    }
+}
+
+.wrapper--ratings {
+    padding: 2rem;
+}
+
+.wrapper--ratings > * {
+    margin-bottom: 1.4rem;
+}
+
+li {
+    list-style-type: none;
+}
+
+.ratings {
+    padding: 0.6rem;
+    background-color: $light-grayish-magenta;
+    margin-bottom: 0.9rem;
+}
+
+.ratings:first-child {
+    margin-top: 2.5rem;
+}
+
+.stars {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.4rem 0 0.7rem;
+}

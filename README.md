@@ -51,6 +51,7 @@ Just a quick easy project to get back after break.
 - [google web fonts helper](https://gwfh.mranftl.com/fonts) - A Hassle-Free Way to Self-Host Google Fonts.
 - [7-1 pattern boilerplate](https://github.com/KittyGiraudel/sass-boilerplate/tree/master/stylesheets) - A boilerplate for 7-1 Sass Architecture.
 - [HTML / Sass Jumpstart]() - Mostly plucked some sensible values (font sizes, spacings, buttons, etc) from here and a reset file.
+- [Fluid typography calculator](https://royalfig.github.io/fluid-typography-calculator/)
 - [PerfectPixel](https://www.welldonecode.com/perfectpixel/) a Chrome extension for comparing website with design image.
 
 ## Author

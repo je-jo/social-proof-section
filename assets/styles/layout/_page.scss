@@ -2,6 +2,86 @@
 // This file contains all styles related to the layout of the page.
 // -----------------------------------------------------------------------------
 
+main {
+    max-width: 140ch;
+}
+
+section.wrapper {
+    display: grid;
+    grid-template-areas:
+        "intro"
+        "ratings"
+        "testimonials";
+    padding: 0 1.5rem;
+    row-gap: 2.4rem;
+    column-gap: 1.5rem;
+
+    @media(min-width: 48rem) {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "intro ratings"
+            "testimonials testimonials";
+    }
+}
+
+.wrapper--intro {
+    @media(min-width: 48rem) {
+        max-width: 48ch;
+    }
+}
+
+.wrapper--ratings {
+    display: grid;
+    align-content: center;
+    justify-items: center;
+
+    gap: 1rem;
+    text-align: center;
+}
+
+.wrapper--ratings>* {
+    display: grid;
+    align-items: center;
+
+    min-width: 80%;
+    padding: 0.6rem;
+    background-color: $light-grayish-magenta;
+    border-radius: $border-radius;
+
+    @media(min-width: 48rem) {
+        grid-template-columns: auto 1fr;
+        justify-items: start;
+        gap: 2rem;
+        &:first-child {
+            margin-top: 1.5rem;
+            justify-self: start;
+        }
+        &:last-child {
+            justify-self: end;
+        }
+    }
+}
+
+.wrapper--stars {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.4rem 0 0.7rem;
+    background-color: red;
+}
+
+.wrapper--testimonials {
+    grid-area: testimonials;
+}
+
+
+li {
+    list-style-type: none;
+}
+
+
+
+
 footer {
     padding: 0.5rem 0;
     text-align: center;

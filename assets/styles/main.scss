@@ -16,7 +16,9 @@
 'base/helpers';
 
 // 4. Layout-related sections
-@import 'layout/page';
+@import 'layout/page',
+'layout/ratings',
+'layout/testimonials';
 
 // 5. Components
 // @import 'components/button',

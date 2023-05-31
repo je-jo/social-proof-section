@@ -15,7 +15,7 @@ $accent: red;
         outline: 3px dotted $accent;
         outline-offset: 3px;
     }
-    //outline: 1px solid salmon;
+    outline: 1px solid salmon;
 }
 
 body {
@@ -24,9 +24,16 @@ body {
     grid-template-rows: auto 1fr auto;
     place-items: center;
     // line-height: unset;
-    // text-align: center;
+    text-align: center;
     background-color: $bg-color;
     color: $text-color;
+    @media screen and (min-width: 48rem) {
+        text-align: left;
+    }
+}
+
+li {
+    list-style-type: none;
 }
 
 /**

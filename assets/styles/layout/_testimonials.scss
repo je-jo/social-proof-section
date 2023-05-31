@@ -1,0 +1,43 @@
+.wrapper--testimonials {
+    grid-area: testimonials;
+    display: grid;
+    gap: 1rem;
+    @media(min-width: 48rem) {
+grid-template-columns: repeat(3,1fr);
+    }
+}
+
+.testimonial {
+    padding: 2.5rem 2rem 0;
+    color: $light-grayish-magenta;
+    background-color: $very-dark-magenta;
+    border-radius: 8px;
+}
+
+figure {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    text-align: left;
+    gap: 1.5rem;
+}
+
+figcaption span {
+    display: block;
+    font-weight: 400;
+    line-height: 0.5;
+    color: $soft-pink;
+}
+
+figure img {
+    border-radius: 50%;
+}
+
+blockquote {
+    font-size: 1rem;
+    padding: 1.7rem 0;
+    text-align: left;
+    line-height: 1.4;
+    // font-weight: 700;
+    letter-spacing: 0.1px;
+    word-spacing: 1px;
+}

@@ -1,0 +1,46 @@
+.wrapper--ratings {
+    display: grid;
+    align-content: center;
+    justify-items: center;
+
+    gap: 1rem;
+    text-align: center;
+    @media(min-width: 67rem) {
+        gap: 1.3rem;
+    }
+}
+
+.wrapper--ratings>* {
+    display: grid;
+    align-items: baseline;
+
+    width: min(100%, 300px);
+    padding: 0.6rem;
+    background-color: $light-grayish-magenta;
+    border-radius: $border-radius;
+
+    @media(min-width: 67rem) {
+        width: 82%;
+        grid-template-columns: auto 1fr;
+        justify-items: start;
+        gap: 2rem;
+
+        &:first-child {
+            margin-top: 3rem;
+            justify-self: start;
+        }
+        &:last-child {
+            justify-self: end;
+        }
+    }
+}
+
+.wrapper--stars {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.4rem 0 0.7rem;
+    @media(min-width: 67rem) {
+        margin-left: 1.5rem;
+    }
+}

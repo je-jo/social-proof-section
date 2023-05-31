@@ -13,8 +13,8 @@ section.wrapper {
         "ratings"
         "testimonials";
 
-    padding: 0 1.5rem;
-    row-gap: 2.4rem;
+    padding: 2rem 1.3rem 0;
+    row-gap: 2.6rem;
     column-gap: 1.5rem;
 
     @media(min-width: 48rem) {
@@ -22,17 +22,20 @@ section.wrapper {
         grid-template-areas:
             "intro ratings"
             "testimonials testimonials";
+
         row-gap: 4.4rem;
     }
 }
 
 .wrapper--intro {
+    padding: 2rem 4px 0;
     @media(min-width: 48rem) {
         max-width: 48ch;
+        padding: unset;
     }
 }
 
 footer {
-    padding: 0.5rem 0;
+    padding: 1rem 0 0.5rem;
     text-align: center;
 }

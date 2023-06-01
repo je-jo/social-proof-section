@@ -19,6 +19,7 @@ h2 {
 p {
     font-size: $para;
     line-height: 1.4;
+    color: $dark-grayish-magenta;
 }
 
 span {
@@ -33,13 +34,3 @@ h3 {
 small {
     font-size: 11px;
 }
-
-/* p {
-    font-size: $para;
-    line-height: 1.5;
-    letter-spacing: -0.4px;
-
-    @media screen and (min-width: 36rem) {
-        font-size: 1rem;
-    }
-} */

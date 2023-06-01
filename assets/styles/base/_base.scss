@@ -3,18 +3,20 @@
 // -----------------------------------------------------------------------------
 
 /// Set base colors
-$bg-color: #fff;
-$text-color: #000;
-$accent: red;
+$bg-color: $white;
+$text-color: $very-dark-magenta;
+$accent: $soft-pink;
 
 
 * {
     margin: 0;
     padding: 0;
+
     &:focus-visible {
         outline: 3px dotted $accent;
         outline-offset: 3px;
     }
+
     // outline: 1px solid salmon;
 }
 
@@ -26,9 +28,18 @@ body {
     // line-height: unset;
     text-align: center;
     background-color: $bg-color;
+   //  background: top left, bottom right / no-repeat;
+    background-position: top left, bottom right;
+    background-repeat: no-repeat, no-repeat;
+    background-image: url(../images/bg-pattern-top-mobile.svg), url(../images/bg-pattern-bottom-mobile.svg);
     color: $text-color;
+
     @media screen and (min-width: 48rem) {
         text-align: left;
+    }
+
+    @media screen and (min-width: 67rem) {
+        background-image: url(../images/bg-pattern-top-desktop.svg), url(../images/bg-pattern-bottom-desktop.svg);
     }
 }
 
@@ -42,15 +53,9 @@ li {
 a {
     color: inherit;
     text-underline-offset: 4px;
+
     &:hover {
         color: $accent;
         // transition: $transition;
     }
 }
-
-
-
-
-
-
-

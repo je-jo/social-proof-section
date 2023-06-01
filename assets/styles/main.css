@@ -86,7 +86,7 @@ select {
   padding: 0;
 }
 *:focus-visible {
-  outline: 3px dotted red;
+  outline: 3px dotted hsl(333, 80%, 67%);
   outline-offset: 3px;
 }
 
@@ -96,12 +96,20 @@ body {
   grid-template-rows: auto 1fr auto;
   place-items: center;
   text-align: center;
-  background-color: #fff;
-  color: #000;
+  background-color: hsl(0, 0%, 100%);
+  background-position: top left, bottom right;
+  background-repeat: no-repeat, no-repeat;
+  background-image: url(../images/bg-pattern-top-mobile.svg), url(../images/bg-pattern-bottom-mobile.svg);
+  color: hsl(300, 43%, 22%);
 }
 @media screen and (min-width: 48rem) {
   body {
     text-align: left;
+  }
+}
+@media screen and (min-width: 67rem) {
+  body {
+    background-image: url(../images/bg-pattern-top-desktop.svg), url(../images/bg-pattern-bottom-desktop.svg);
   }
 }
 
@@ -117,7 +125,7 @@ a {
   text-underline-offset: 4px;
 }
 a:hover {
-  color: red;
+  color: hsl(333, 80%, 67%);
 }
 
 /* league-spartan-regular - latin_latin-ext */
@@ -171,6 +179,7 @@ h2 {
 p {
   font-size: 18px;
   line-height: 1.4;
+  color: hsl(303, 10%, 53%);
 }
 
 span {
@@ -186,15 +195,6 @@ small {
   font-size: 11px;
 }
 
-/* p {
-    font-size: $para;
-    line-height: 1.5;
-    letter-spacing: -0.4px;
-
-    @media screen and (min-width: 36rem) {
-        font-size: 1rem;
-    }
-} */
 .sr-only {
   position: absolute;
   width: 1px;

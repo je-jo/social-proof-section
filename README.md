@@ -21,7 +21,7 @@ This is a solution to the [Social proof section challenge on Frontend Mentor](ht
 
 Users should be able to:
 
-- [] View the optimal layout for the section depending on their device's screen size
+- [x] View the optimal layout for the section depending on their device's screen size
 
 ### Screenshot
 
@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- [Solution](...)
+- [Solution](https://www.frontendmentor.io/solutions/social-proof-section-KwX_CHrUYi)
 - [Live](https://je-jo.github.io/social-proof-section/)
 
 ## My process
